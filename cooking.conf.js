@@ -8,6 +8,8 @@ cooking.set({
   dist: './dist',
   template: './src/index.tpl',
 
+  devtool: 'source-map',
+
   devServer: {
     port: 8080,
     hostname: 'local.ichuanyi.com',
