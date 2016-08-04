@@ -21,6 +21,26 @@
     components: {
         HeaderCpn,
         FooterCpn
+    },
+
+    ready: function() {
+        // this.fetchPost();
+        // this.fetchUser(this.post.userId);
+      },
+
+    methods: {
+        fetchPost: function() {
+            this.$http.get('/pc.php?method=pc.index', function(data, status, request) {
+
+            });
+        },
+
+        fetchUser: function(userId) {
+            var resource = this.$resource('http://jsonplaceholder.typicode.com/users/:id');
+            resource.get({id: userId}, function(user, status, request) {
+                this.$set('user', user);
+            })
+        }
     }
 
   };

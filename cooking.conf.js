@@ -10,7 +10,14 @@ cooking.set({
 
   devServer: {
     port: 8080,
-    publicPath: '/'
+    hostname: 'local.ichuanyi.com',
+    publicPath:"/",
+    proxy: {
+      '*': {
+        target: 'http://ichuanyi.com',
+        secure: false
+      }
+    }
   },
 
   // production
