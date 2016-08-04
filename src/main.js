@@ -3,6 +3,11 @@ import VueRouter from "vue-router";
 
 import App from './app';
 import Index from './pages/index/index.vue';
+import VueResource from 'vue-resource';
+
+Vue.use(VueResource);
+
+
 
 new Vue({ // eslint-disable-line
   el: 'body',

@@ -14,3 +14,9 @@ make dist
 
 ## License
 ISC
+
+
+## todo
+
+
+[x] vuex 引入
