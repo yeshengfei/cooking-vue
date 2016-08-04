@@ -1,24 +1,17 @@
 <template>
     <div class="cpn-wrap">
-        <a v-link="{name:'page2'}">
-            {{contentData.name}}
-        </a>
+        <a href="#fdsf">page2</a>
     </div>
 </template>
 <style scoped lang="sass">
     .cpn-wrap
+        margin-top: 100px
         display: inline-block
         min-height: 400px
 
 </style>
 <script>
     export default{
-        props : ['content-data'],
 
-        data(){
-            return{
-
-            }
-        }
     }
 </script>
